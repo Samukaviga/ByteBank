@@ -1,0 +1,211 @@
+body {
+    background-color: rgb(208, 235, 214);
+    
+}
+
+.principal {
+    display: flex;
+    padding: 0 3em;
+    height: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 1em;
+    border-bottom: solid 1px black ;
+}
+
+.menu {
+    display: flex;
+    margin: 1em;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 2em;
+    height: 1000px;  
+    
+}
+
+
+/* COLUNA CENTRAL */
+.coluna__central {
+    padding: 1em;
+    width: 48%;
+  
+}
+
+.coluna__central-cartao {
+    padding: 1em;
+    background-color: rgb(64, 177, 64);
+    background-image: url(../images/saldo-bg1.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 350px;
+    border-radius: 5px;
+    height: 450px;
+}
+
+.cartao-titulo {
+    color: aliceblue;
+    font-size: 27px;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.cartao-data {
+    color: aliceblue;
+}
+
+.cartao__lateral {
+    display: flex;
+    justify-content: end;
+}
+
+.cartao__lateral-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 1em;
+}
+
+.cartao__lateral-texto {
+    color: aliceblue;
+    font-size: 27px;
+    font-weight: 600;
+    border-bottom: 1px solid aliceblue;
+    padding: 0.8em 0;
+}
+
+.cartao__lateral-tipo-conta {
+    color: aliceblue;
+    font-size: 23px;
+    padding-top: 0.4em 0;
+}
+
+.cartao__lateral-saldo {
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+/*COLUNA LATERAL*/
+
+.coluna__lateral {
+    background-color: aliceblue;
+    width: 15%;
+    padding: 2em;
+    margin: 1em;
+}
+
+.titulo-extrato {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.coluna__lateral__card-principal {
+    margin-bottom: 2.8em;
+}
+
+.coluna__lateral-mes {
+    color: green;
+    margin-bottom: 0.5em;
+}
+
+.coluna__lateral-tipo {
+    font-size: 20px;
+    margin-bottom: 0.5em;
+}
+
+.coluna__lateral-valor {
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 1em;
+}
+
+.coluna__lateral__card {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid green;
+    margin-bottom: 1em;
+}
+
+
+.coluna__lateral-data {
+    color: rgba(167, 148, 123, 0.658);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* COLUNA CENTRAL FORMULARIO */
+
+.coluna__central-formulario {
+    background-color: #d8d8d8;
+    margin-top: 1em;
+    padding: 1em;
+    background-image: url(../images/nova-transacao-bg2.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    border-radius: 5px;
+    height: 50%;
+}
+
+.titulo-formulario {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.form-input, .form-select {
+    width: 40%;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid #50b447;
+    margin: 1.2em 0;
+}
+
+.form-input:focus {
+    outline: none; /* Remove a borda de foco */
+}
+
+.form-texto {
+    color: black;
+    font-weight: 700;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+
+.input-valor {
+    width: 20%;
+    text-align: center;
+}
+
+.input-data {
+    width: 15%;
+}
+
+.form-botao {
+    background-color: #50b447;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    width: 25%;
+    padding: 13px 6px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.form-botao:hover {
+    background-color: #275f22;
+    transition: 5ms;
+}

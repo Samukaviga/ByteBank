@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Transacao</title>
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <img class="cabecalho__logo" src="./images/logo-bytebank.svg" alt="">
+
+            <div class="cabecalho__itens" >
+                <p class="cabecalho__nome">Samuel Gomes Teixeira</p>
+                <img class="cabecalho__avatar" src="./images/avatar.svg" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <main class="principal">
+        
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Transferência</a>
+            <a href="#">Investimentos</a>
+            <a href="#">Outros Serviços</a>
+        </nav>
+
+        <div class="coluna__central">
+            <section class="coluna__central-cartao">
+                <h1 class="cartao-titulo">Ola Samuel :)</h1>
+
+                <p class="cartao-data">Quinta-feira, 08/09/2022</p>
+
+                <div class="cartao__lateral">
+                    
+                    <div class="cartao__lateral-itens">
+                        <p class="cartao__lateral-texto">Saldo <img src="./images/olho.svg" alt="Icone de olho"></p>
+                        <p class="cartao__lateral-tipo-conta">Conta Corrente</p>
+                        <p class="cartao__lateral-saldo">R$2.500,00</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="coluna__central-formulario">
+                <h2 class="titulo-formulario">Nova Transacao</h2>
+
+                <form action="">
+                    
+                    <div>
+                        <select class="form-select" name="tipo">
+                            <option value="" disabled selected>Selecione o tipo de Transacao</option>
+                            <option value="deposito">Deposito</option>
+                            <option value="transferencia">Transferência</option>
+                            <option value="boleto">Pagamento Boleto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-item ">
+                        <label class="form-texto">Valor:</label>
+                        <input class="form-input input-valor" type="number" placeholder="0,00">
+                    </div>
+
+                    <div class="form-item">
+                        <label class="form-texto">Data:</label>
+                        <input class="form-input input-data" type="date">
+                    </div>
+
+                    <div class="form-item">
+                        <input class="form-botao" type="submit" name="enviar" value="Concluir Transacao">
+                    </div>
+
+                </form>
+            </section>
+
+        </div>
+
+        <div class="coluna__lateral">
+            <h2 class="titulo-extrato">Extrato</h2>
+
+            <div class="coluna__lateral__card-principal">
+                
+                <p class="coluna__lateral-mes">Setembro</p>
+                
+                <div class="coluna__lateral__card">
+                    <div class="coluna__lateral-itens">
+                        <p class="coluna__lateral-tipo">Transferência</p>
+                        <p class="coluna__lateral-valor">-R$36,00</p>
+                    </div>
+                    <div class="coluna__lateral-sub">
+                        <p class="coluna__lateral-data">04/09</p>
+                    </div>
+                </div>
+
+                <div class="coluna__lateral__card">
+                    <div class="coluna__lateral-itens">
+                        <p class="coluna__lateral-tipo">Transferência</p>
+                        <p class="coluna__lateral-valor">-R$56,00</p>
+                    </div>
+                    <div class="coluna__lateral-sub">
+                        <p class="coluna__lateral-data">02/09</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coluna__lateral__card-principal">
+                
+                <p class="coluna__lateral-mes">Agosto</p>
+                
+                <div class="coluna__lateral__card">
+                    <div class="coluna__lateral-itens">
+                        <p class="coluna__lateral-tipo">Transferência</p>
+                        <p class="coluna__lateral-valor">-R$50,00</p>
+                    </div>
+                    <div class="coluna__lateral-sub">
+                        <p class="coluna__lateral-data">30/08</p>
+                    </div>
+                </div>
+
+                <div class="coluna__lateral__card">
+                    <div class="coluna__lateral-itens">
+                        <p class="coluna__lateral-tipo">Deposito</p>
+                        <p class="coluna__lateral-valor">R$86,00</p>
+                    </div>
+                    <div class="coluna__lateral-sub">
+                        <p class="coluna__lateral-data">27/09</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>
