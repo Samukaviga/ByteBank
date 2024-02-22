@@ -28,7 +28,14 @@
 
 
 @media (max-width: 950px) {
+    
+    header {
+        width: 100%;
+    }
+
     .cabecalho {
+        width: auto;
+        margin: 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -37,5 +44,20 @@
 
     .cabecalho__avatar {
         display: none;
+    }
+
+    
+    .cabecalho__itens {
+        display: block;
+    }
+
+    .cabecalho__nome {
+        padding: 0 5em;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .cabecalho__logo {
+        width: 200px;
     }
  }

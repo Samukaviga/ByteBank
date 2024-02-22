@@ -252,16 +252,30 @@ body {
    .coluna__central {
         width: 100%;
         margin: 0;
+        margin-bottom: 0.7em;
         padding: 0;
    }
 
    .coluna__central-cartao {
         margin: 0;
         margin-top: 1em;
-        width: 300px;
+        width: 92%;
    }
 
    .coluna__lateral {
+        margin: 0;
+        padding: 1.6em;
         width: 85%;
    }
+
+   
+}
+
+@media (max-width: 562px) {
+
+    .coluna__central-formulario  {
+        background-size: cover; /* Ajusta o tamanho da imagem de fundo */
+        backdrop-filter: blur(1px); /* Aplica o filtro de desfoque */
+        -webkit-backdrop-filter: blur(1px);
+    }
 }
