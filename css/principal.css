@@ -1,6 +1,6 @@
 body {
     background-color: rgb(208, 235, 214);
-    
+    font-family: "Montserrat", sans-serif;
 }
 
 .principal {
@@ -114,9 +114,10 @@ body {
 
 .coluna__lateral {
     background-color: aliceblue;
-    width: 15%;
+    width: 18%;
     padding: 2em;
     margin: 1em;
+    border-radius: 5px;
 }
 
 .titulo-extrato {
@@ -278,4 +279,32 @@ body {
         backdrop-filter: blur(1px); /* Aplica o filtro de desfoque */
         -webkit-backdrop-filter: blur(1px);
     }
+}
+
+@media (max-width: 460px) { 
+
+    .cartao-titulo {
+        margin-top: 0.5em;
+    }
+
+    .cartao-data {
+        margin-top: 0.5em;
+    }
+    
+    .coluna__central-cartao {
+        background-image: none;
+    }
+
+    .cartao__lateral {
+        justify-content: start;
+    }
+
+    .coluna__central-cartao {
+        height: 350px;
+    }
+
+    .cartao__lateral-itens {
+        margin-top: 2em;
+    }
+    
 }
